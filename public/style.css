@@ -1,0 +1,57 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  background:linear-gradient(40deg,#ffd86f,#fc6262);
+}
+.todo{
+  margin-bottom:1rem;
+}
+
+.todo span.completed{
+  text-decoration: line-through;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+.todo label{
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #f3f3f3;
+  border-radius: 8px;
+}
+
+.todo i{
+  z-index: 2;
+}
+
+.form-wrap{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center ;
+}
+.a{
+  text-align: center;
+}
+
+ul{
+  padding-left: 0px;
+  list-style-type: none;
+}
+input{
+  border:2px solid  #000033;
+  border-radius:5px;
+}
+input:focus{
+  outline: 0!important;
+  outline-offset: 0!important;
+}
+.span-todo{
+  margin-right: .5rem;
+  margin-left: .5rem;
+}

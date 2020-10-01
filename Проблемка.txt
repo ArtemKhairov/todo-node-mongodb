@@ -1,0 +1,13 @@
+Handlebars не позволяет получить все свойства 
+Связано с проблемой безопастности
+
+https://stackoverflow.com/questions/59690923/handlebars-access-has-been-denied-to-resolve-the-property-from-because-it-is
+
+Существует 2 решения
+
+1)await Todo.find({}).lean()
+Вернется json-чик и все заработает
+
+2)npm i @handlebars/allow-prototype-access
+Если имеется только у разраба доступ к templates
+Существует вероятность  атак XXS и RCE.
